@@ -1,4 +1,17 @@
-body {
+:root {
+  --main-color-terracotta: #d77b6f;
+  --main-color-lemon: #e0c879;
+  --main-color-smoke: #faf3dd;
+  --main-color-gray: #696d7d ;
+  --main-font: "Tenor", Sans;
+}
+
+* {
+  background-color: var(--main-color-smoke);
+  font-family: var(--main-font);
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -53,4 +66,4 @@ code {
 
 button {
   font-size: calc(10px + 2vmin);
-}
+} */
