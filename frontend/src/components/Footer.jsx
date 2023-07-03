@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <div>
-      <div className="bg-terracotta">
+      <div className="bg-terracotta flex justify-between">
         <div className="flex flex-wrap justify-start items-center">
           <div className="w-10 mx-3 py-2">
             <button type="button" onClick={handleClickInsta}>
@@ -28,6 +28,9 @@ function Footer() {
             <button type="button" onClick={handleClickFB}>
               <img src={facebook} alt="Icône du réseau social facebook" />
             </button>
+          </div>
+          <div className="text-white flex flex-wrap justify-end items-center ">
+            <p>A la Maude ® | © 2023 Tous droits réservés</p>
           </div>
         </div>
       </div>
