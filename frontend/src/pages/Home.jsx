@@ -1,13 +1,13 @@
 import Header from "@components/Header";
 import React from "react";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       Home
       <Header />
     </div>
   );
-};
+}
 
 export default Home;
