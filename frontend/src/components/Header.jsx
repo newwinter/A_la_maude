@@ -1,26 +1,73 @@
 import React from "react";
 import "./Header.css";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoNOIR from "../assets/logoNOIR.png";
-import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header bg-light">
       <nav>
-        <div className="flex flex-wrap min-[320px]:flex-col min-[635px]:flex-row items-center justify-between m-10 p-2 underline-offset-8 ">
+        <div className="flex flex-wrap justify-center items-center m-3">
           <Link to="/">
-            <img
-              src={logoNOIR}
-              className="w-40 mr-3 pt-3 pb-3 max-[435px]:w-15
-            "
-              alt="Logo A la Maude"
-            />
+            <img src={logoNOIR} className="w-24" alt="Logo A la Maude" />
           </Link>
         </div>
       </nav>
-      <NavBar />
+      <div className="bg-terracotta">
+        <nav>
+          <ul className="text-light flex flex-row justify-center text-center font-medium p-2 mt-2 rounded bg-gray-50 ">
+            <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-rose font-bold underline underline-offset-8 decoration-2"
+                    : ""
+                }
+              >
+                A propos
+              </NavLink>
+            </li>
+            <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
+              <NavLink
+                to="/articles"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-rose font-bold underline underline-offset-8 decoration-2"
+                    : ""
+                }
+              >
+                Boutique
+              </NavLink>
+            </li>
+            <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
+              <NavLink
+                to="/panier"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-rose font-bold underline underline-offset-8 decoration-2"
+                    : ""
+                }
+              >
+                Panier
+              </NavLink>
+            </li>
+            <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-rose font-bold underline underline-offset-8 decoration-2"
+                    : ""
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }

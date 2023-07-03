@@ -15,23 +15,20 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <p>Home</p>
-      <Router>
-        <Routes>
-          <Route path="/" element={<UserLayout />}>
-            <Route path="" element={<Home />} />
-            <Route path="/articles" element={<Articles />} />
-            <Route path="/panier" element={<Panier />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Page404 />} />
-          </Route>
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route path="" element={<HomeAdmin />} />
-          </Route>
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<UserLayout />}>
+          <Route path="" element={<Home />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/panier" element={<Panier />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Page404 />} />
+        </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="" element={<HomeAdmin />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
