@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div>
+    <div className="bg-terracotta">
       <nav>
-        <ul className="flex flex-row text-center font-medium p-2 mt-2 rounded bg-gray-50 ">
-          <li className="block py-2 pl-3 pr-2 text-text_color rounded hover:text-rose">
+        <ul className="text-light flex flex-row justify-center text-center font-medium p-2 mt-2 rounded bg-gray-50 ">
+          <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -19,7 +19,7 @@ function NavBar() {
               Home
             </NavLink>
           </li>
-          <li className="block py-2 pl-3 pr-2 text-text_color rounded hover:text-rose">
+          <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
             <NavLink
               to="/articles"
               className={({ isActive }) =>
@@ -31,7 +31,7 @@ function NavBar() {
               Boutique
             </NavLink>
           </li>
-          <li className="block py-2 pl-3 pr-2 text-text_color rounded hover:text-rose">
+          <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
             <NavLink
               to="/panier"
               className={({ isActive }) =>
@@ -43,7 +43,7 @@ function NavBar() {
               Panier
             </NavLink>
           </li>
-          <li className="block py-2 pl-3 pr-2 text-text_color rounded hover:text-rose">
+          <li className="block py-2 pl-3 pr-2 mx-4 rounded hover:text-rose">
             <NavLink
               to="/contact"
               className={({ isActive }) =>

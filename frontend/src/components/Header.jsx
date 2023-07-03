@@ -7,16 +7,11 @@ import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header bg-light">
       <nav>
-        <div className="flex flex-wrap min-[320px]:flex-col min-[635px]:flex-row items-center justify-between m-10 p-2 underline-offset-8 ">
+        <div className="flex flex-wrap justify-center items-center m-3">
           <Link to="/">
-            <img
-              src={logoNOIR}
-              className="w-40 mr-3 pt-3 pb-3 max-[435px]:w-15
-            "
-              alt="Logo A la Maude"
-            />
+            <img src={logoNOIR} className="w-24" alt="Logo A la Maude" />
           </Link>
         </div>
       </nav>
