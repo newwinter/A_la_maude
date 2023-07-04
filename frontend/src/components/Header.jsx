@@ -15,7 +15,7 @@ function Header() {
       </nav>
       <div className="bg-terracotta">
         <nav>
-          <ul className="text-light flex flex-row justify-center text-center font-medium rounded bg-gray-50 ">
+          <ul className="text-light flex flex-row justify-center text-center text-lg rounded bg-gray-50 ">
             <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
               <NavLink
                 to="/"
