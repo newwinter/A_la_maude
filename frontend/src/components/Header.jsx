@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Link, NavLink } from "react-router-dom";
 import logoNOIR from "../assets/logoNOIR.png";
+
+function Header() {
 
 function Header() {
   return (
