@@ -1,13 +1,4 @@
-import Header from "@components/Header";
-import React from "react";
-
-function Home() {
-  return (
-    <div>
-      Home
-      <Header />
-    </div>
-  );
+export default function Home() {
+  return <header className="App-header" />;
 }
 
-export default Home;
