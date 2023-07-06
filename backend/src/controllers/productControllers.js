@@ -1,15 +1,28 @@
 const models = require("../models");
 
-const browse = (req, res) =>
-  models.product
-    .findAll()
-    .then(([product]) => {
-      res.send(product);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.sendStatus(500);
-    });
+const browse = (req, res) => {
+  if (req.query.type === "random") {
+    models.product
+      .findRandom()
+      .then(([product]) => {
+        res.send(product);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  } else {
+    models.product
+      .findAll()
+      .then(([product]) => {
+        res.send(product);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  }
+};
 
 const read = (req, res) => {
   models.product
