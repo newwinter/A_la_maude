@@ -1,3 +1,4 @@
+import RandomProductAccueil from "@components/RandomProductAccueil";
 import React from "react";
 import atelier from "../assets/atelier.jpeg";
 
@@ -11,6 +12,7 @@ function Home() {
           src={atelier}
         />
       </div>
+      <RandomProductAccueil />
     </div>
   );
 }

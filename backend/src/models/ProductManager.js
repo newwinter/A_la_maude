@@ -9,6 +9,12 @@ class ProductManager extends AbstractManager {
     return this.database.query(`select * from  ${this.table}`);
   }
 
+  findRandom() {
+    return this.database.query(
+      `select * from ${this.table} order by rand() limit 6`
+    );
+  }
+
   insert(item) {
     return this.database.query(`insert into ${this.table} (title) values (?)`, [
       item.title,
