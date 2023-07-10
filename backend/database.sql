@@ -36,120 +36,47 @@ INSERT INTO products(name,gender,price,status,description,category_id) VALUES ('
 INSERT INTO products(name,gender,price,status,description,category_id) VALUES ('Cotons beiges à motifs oiseaux','agenre',12,'disponible','Ces produits sont une alternative écologique et durable qui remplacera vos cotons jetables. Fabriqué à partir de 100% de coton, il offre un côté en tissus doux et un coté en tissus coton à motifs. Conçu pour remplacer les produits à usage unique, ces produits est respectueux de l''environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Ils sont fabriqués à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté.',2);
 
 
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_F_1.jpeg','lorem ipsum',1);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_F_2.jpeg','lorem ipsum',1);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_F_3.jpeg','lorem ipsum',1);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_F_4.jpeg','lorem ipsum',1);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_F_1.jpeg','lorem ipsum',2);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_F_2.jpeg','lorem ipsum',2);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_F_3.jpeg','lorem ipsum',2);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_F_4.jpeg','lorem ipsum',2);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_F_1.jpeg','lorem ipsum',3);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_F_2.jpeg','lorem ipsum',3);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_F_3.jpeg','lorem ipsum',3);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_F_3.jpeg','lorem ipsum',3);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_M_1.jpeg','lorem ipsum',4);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_M_2.jpeg','lorem ipsum',4);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_M_3.jpeg','lorem ipsum',4);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot1_M_4.jpeg','lorem ipsum',4);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_M_1.jpeg','lorem ipsum',5);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_M_2.jpeg','lorem ipsum',5);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_M_3.jpeg','lorem ipsum',5);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot2_M_4.jpeg','lorem ipsum',5);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_M_1.jpeg','lorem ipsum',6);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_M_2.jpeg','lorem ipsum',6);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_M_3.jpeg','lorem ipsum',6);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/Calot3_M_3.jpeg','lorem ipsum',6);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_1.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_2.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_3.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_4.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_5.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_6.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton1_7.jpeg','lorem ipsum',7);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton2_1.jpeg','lorem ipsum',8);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton2_2.jpeg','lorem ipsum',8);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton2_3.jpeg','lorem ipsum',8);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton3_1.jpeg','lorem ipsum',9);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton3_2.jpeg','lorem ipsum',9);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton3_3.jpeg','lorem ipsum',9);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton3_4.jpeg','lorem ipsum',9);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton4_1.jpeg','lorem ipsum',10);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton4_2.jpeg','lorem ipsum',10);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton4_3.jpeg','lorem ipsum',10);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton4_4.jpeg','lorem ipsum',10);
-INSERT INTO images(src,alt,product_id) VALUES ('./public/assets/images/coton4_5.jpeg','lorem ipsum',10);
-
--- [
---   {
---     name: "Calot à fleurs bleues et roses",
---     gender: "femme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---     {
---     name: "Calot kaki à fleurs noirs et blanches",
---     gender: "femme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---       {
---     name: "Calot blancs avec arbres",
---     gender: "femme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---     {
---     name: "Calot à motifs marins",
---     gender: "homme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---     {
---     name: "Calot à petits triangles",
---     gender: "homme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---       {
---     name: "Calot à motifs dinosaures",
---     gender: "homme",
---     price: 10,
---     status: "disponible",
---     description: "Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l'environnement."
---   },
---         {
---     name: "Cotons fleuris colorés",
---     gender: "agenre",
---     price: 12,
---     status: "disponible",
---     description: "Ces produits sont une alternative écologique et durable qui remplacera vos cotons jetables. Fabriqué à partir de 100% de coton, il offre un côté en tissus doux et un coté en tissus coton à motifs. Conçu pour remplacer les produits à usage unique, ces produits est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Ils sont fabriqués à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté."
---   },
---           {
---     name: "Cotons à motifs bleus",
---     gender: "agenre",
---     price: 12,
---     status: "disponible",
---     description: "Ces produits sont une alternative écologique et durable qui remplacera vos cotons jetables. Fabriqué à partir de 100% de coton, il offre un côté en tissus doux et un coté en tissus coton à motifs. Conçu pour remplacer les produits à usage unique, ces produits est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Ils sont fabriqués à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté."
---   },
---           {
---     name: "Cotons à fleurs ornementales",
---     gender: "agenre",
---     price: 12,
---     status: "disponible",
---     description: "Ces produits sont une alternative écologique et durable qui remplacera vos cotons jetables. Fabriqué à partir de 100% de coton, il offre un côté en tissus doux et un coté en tissus coton à motifs. Conçu pour remplacer les produits à usage unique, ces produits est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Ils sont fabriqués à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté."
---   },
---           {
---     name: "Cotons beiges à motifs oiseaux",
---     gender: "agenre",
---     price: 12,
---     status: "disponible",
---     description: "Ces produits sont une alternative écologique et durable qui remplacera vos cotons jetables. Fabriqué à partir de 100% de coton, il offre un côté en tissus doux et un coté en tissus coton à motifs. Conçu pour remplacer les produits à usage unique, ces produits est respectueux de l'environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Ils sont fabriqués à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté."
---   },
--- ]
+INSERT INTO images(src,alt,product_id) VALUES ('Calot1_F_1.jpeg','lorem ipsum',1);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot1_F_2.jpeg','lorem ipsum',1);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot1_F_3.jpeg','lorem ipsum',1);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot1_F_4.jpeg','lorem ipsum',1);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot2_F_1.jpeg','lorem ipsum',2);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot2_F_2.jpeg','lorem ipsum',2);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot2_F_3.jpeg','lorem ipsum',2);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot2_F_4.jpeg','lorem ipsum',2);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot3_F_1.jpeg','lorem ipsum',3);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot3_F_2.jpeg','lorem ipsum',3);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot3_F_3.jpeg','lorem ipsum',3);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot3_F_4.jpeg','lorem ipsum',3);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot11_M_1.jpeg','lorem ipsum',4);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot11_M_2.jpeg','lorem ipsum',4);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot11_M_3.jpeg','lorem ipsum',4);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot11_M_4.jpeg','lorem ipsum',4);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot12_M_1.jpeg','lorem ipsum',5);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot12_M_2.jpeg','lorem ipsum',5);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot12_M_3.jpeg','lorem ipsum',5);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot12_M_4.jpeg','lorem ipsum',5);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot13_M_1.jpeg','lorem ipsum',6);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot13_M_2.jpeg','lorem ipsum',6);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot13_M_3.jpeg','lorem ipsum',6);
+INSERT INTO images(src,alt,product_id) VALUES ('Calot13_M_4.jpeg','lorem ipsum',6);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_1.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_2.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_3.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_4.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_5.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_6.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton1_7.jpeg','lorem ipsum',7);
+INSERT INTO images(src,alt,product_id) VALUES ('coton2_1.jpeg','lorem ipsum',8);
+INSERT INTO images(src,alt,product_id) VALUES ('coton2_2.jpeg','lorem ipsum',8);
+INSERT INTO images(src,alt,product_id) VALUES ('coton2_3.jpeg','lorem ipsum',8);
+INSERT INTO images(src,alt,product_id) VALUES ('coton3_1.jpeg','lorem ipsum',9);
+INSERT INTO images(src,alt,product_id) VALUES ('coton3_2.jpeg','lorem ipsum',9);
+INSERT INTO images(src,alt,product_id) VALUES ('coton3_3.jpeg','lorem ipsum',9);
+INSERT INTO images(src,alt,product_id) VALUES ('coton3_4.jpeg','lorem ipsum',9);
+INSERT INTO images(src,alt,product_id) VALUES ('coton4_1.jpeg','lorem ipsum',10);
+INSERT INTO images(src,alt,product_id) VALUES ('coton4_2.jpeg','lorem ipsum',10);
+INSERT INTO images(src,alt,product_id) VALUES ('coton4_3.jpeg','lorem ipsum',10);
+INSERT INTO images(src,alt,product_id) VALUES ('coton4_4.jpeg','lorem ipsum',10);
+INSERT INTO images(src,alt,product_id) VALUES ('coton4_5.jpeg','lorem ipsum',10);
 
