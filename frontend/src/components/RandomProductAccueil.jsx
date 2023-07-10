@@ -18,13 +18,17 @@ function RandomProductAccueil() {
   return (
     <>
       <div>RandomProductAccueil</div>
-      <swiper-container>
+      <swiper-container
+        pagination="true"
+        pagination-clickable="true"
+        space-between="30"
+        slides-per-view="3"
+        className="swiper-container font-inter"
+      >
         {products.map((product) => (
-          <swiper-slide>
-            <div>
-              {product.name}
-              {product.price}
-            </div>
+          <swiper-slide className="swiper-slide">
+            <div className="mb-5">{product.price}€</div>
+            <div className="mt-2">{product.name}</div>
             <img
               src={`${import.meta.env.VITE_BACKEND_URL}/assets/images/${
                 product.src
@@ -39,5 +43,3 @@ function RandomProductAccueil() {
 }
 
 export default RandomProductAccueil;
-
-// http://localhost:5005/assets/images/Calot2_F_1.jpeg
