@@ -1,16 +1,34 @@
 import React from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
-import logoNOIR from "../assets/logoNOIR.png";
+import logonoir from "../assets/logonoir.png";
+import magnifyingglass from "../assets/magnifyingglass.png";
+import user from "../assets/user.png";
+import shoppingbasket from "../assets/shoppingbasket.png";
 
 function Header() {
   return (
     <div className="header bg-light">
       <nav>
-        <div className="flex flex-wrap justify-center items-center m-3">
-          <Link to="/">
-            <img src={logoNOIR} className="w-24" alt="Logo A la Maude" />
-          </Link>
+        <div className="flex">
+          <div className="flex flex-wrap justify-center items-center m-3">
+            <Link to="/">
+              <img src={logonoir} className="w-24" alt="Logo A la Maude" />
+            </Link>
+          </div>
+          <div className="flex justify-center my-2">
+            <img
+              src={magnifyingglass}
+              alt="logo de loupe"
+              className="w-7 h-7 mr-2"
+            />
+            <img src={user} alt="logo d'utilisateur" className="w-7 h-7 mx-1" />
+            <img
+              src={shoppingbasket}
+              alt="logo de panier d'achats"
+              className="w-7 h-7 ml-2"
+            />
+          </div>
         </div>
       </nav>
       <div className="bg-terracotta">
