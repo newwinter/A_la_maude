@@ -8,6 +8,7 @@ module.exports = {
       black: "#000000",
       lemon: "#E0C879",
       terracotta: "#D77B6F",
+      beige: "#F2E3D5",
       light: "#FFFCF1",
       yellow: "#ffc82c",
       text_color: "#696D7D",

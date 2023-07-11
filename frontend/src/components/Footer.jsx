@@ -10,14 +10,14 @@ function Footer() {
 
   return (
     <div>
-      <div className="bg-terracotta text-light">
+      <div className="bg-beige text-black">
         <div className="flex justify-between items-center">
           <div className="w-10 mx-3 pt-3 pb-1">
             <button type="button" onClick={handleClickInsta}>
               <img src={instagram} alt="Icône du réseau social instagram" />
             </button>
           </div>
-          <div className="text-white flex flex-wrap justify-end mx-3">
+          <div className="text-black flex flex-wrap justify-end mx-3">
             <p>A la Maude ® | © 2023 Tous droits réservés</p>
           </div>
         </div>
