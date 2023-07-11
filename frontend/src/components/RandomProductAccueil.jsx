@@ -16,8 +16,7 @@ function RandomProductAccueil() {
   }, []);
 
   return (
-    <>
-      <div>RandomProductAccueil</div>
+    <div>
       <swiper-container
         pagination="true"
         pagination-clickable="true"
@@ -38,7 +37,7 @@ function RandomProductAccueil() {
           </swiper-slide>
         ))}
       </swiper-container>
-    </>
+    </div>
   );
 }
 
