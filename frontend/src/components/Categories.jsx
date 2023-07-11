@@ -11,7 +11,7 @@ function Categories() {
   //     .catch((err) => console.error(err));
   // }, []);
 
-  return <div>Categories</div>;
+  return <div>Categorievddvdfwxvstatussss</div>;
 }
 
 export default Categories;
