@@ -1,17 +1,15 @@
-import RandomProductAccueil from "@components/RandomProductAccueil";
 import React from "react";
-import atelier from "../assets/atelier.jpeg";
+import RandomProductAccueil from "../components/RandomProductAccueil";
+import ResumeAccueil from "../components/ResumeAccueil";
+import couturecoupe from "../assets/couturecoupe.jpeg";
 
 function Home() {
   return (
     <div>
-      <div className="object-cover overflow-hidden shadow-[4px_7px_5px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-        <img
-          className="hover:scale-125 transition duration-500 cursor-pointer w-full"
-          alt="home"
-          src={atelier}
-        />
+      <div className="mx-24 my-10">
+        <img alt="home" src={couturecoupe} />
       </div>
+      <ResumeAccueil />
       <RandomProductAccueil />
     </div>
   );
