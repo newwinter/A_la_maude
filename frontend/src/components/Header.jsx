@@ -1,21 +1,42 @@
 import React from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
-import logoNOIR from "../assets/logoNOIR.png";
+import logonoir from "../assets/logonoir.png";
+import magnifyingglass from "../assets/magnifyingglass.png";
+import user from "../assets/user.png";
+import shoppingbasket from "../assets/shoppingbasket.png";
 
 function Header() {
   return (
-    <div className="header bg-light">
+    <div className="header bg-white">
       <nav>
-        <div className="flex flex-wrap justify-center items-center m-3">
-          <Link to="/">
-            <img src={logoNOIR} className="w-24" alt="Logo A la Maude" />
-          </Link>
+        <div className="flex">
+          <div className="flex flex-wrap basis-1/3" />
+          <div className="flex flex-wrap basis-1/3 justify-center items-center m-3">
+            <Link to="/">
+              <img src={logonoir} className="w-28" alt="Logo A la Maude" />
+            </Link>
+          </div>
+          <div className="flex basis-1/3 justify-end my-2">
+            <img
+              src={magnifyingglass}
+              alt="logo de loupe"
+              className="w-7 h-7 mr-2"
+            />
+            <img src={user} alt="logo d'utilisateur" className="w-7 h-7 mx-1" />
+            <Link to="/panier">
+              <img
+                src={shoppingbasket}
+                alt="logo de panier d'achats"
+                className="w-7 h-7 ml-2"
+              />
+            </Link>
+          </div>
         </div>
       </nav>
-      <div className="bg-terracotta">
+      <div className="bg-white">
         <nav>
-          <ul className="text-light flex flex-row justify-center text-center text-lg rounded bg-gray-50 ">
+          <ul className="text-black bg-beige flex flex-row justify-center text-center text-lg rounded bg-gray-50 ">
             <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
               <NavLink
                 to="/"
@@ -40,7 +61,7 @@ function Header() {
                 Boutique
               </NavLink>
             </li>
-            <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
+            {/* <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
               <NavLink
                 to="/panier"
                 className={({ isActive }) =>
@@ -51,7 +72,7 @@ function Header() {
               >
                 Panier
               </NavLink>
-            </li>
+            </li> */}
             <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
               <NavLink
                 to="/contact"
