@@ -20,6 +20,17 @@ class ProductManager extends AbstractManager {
     );
   }
 
+  findCategories() {
+    return this.database.query(
+      `select p.id, p.name, p.price,
+      (select id from images where images.product_id = p.id limit 1) as im_id, 
+      (select src from images where images.id = im_id) as src, 
+      (select alt from images where images.id = im_id) as alt 
+      from ${this.table} as p
+      order by rand() limit 6`
+    );
+  }
+
   insert(item) {
     return this.database.query(`insert into ${this.table} (title) values (?)`, [
       item.title,
