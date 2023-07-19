@@ -16,28 +16,31 @@ function RandomProductAccueil() {
   }, []);
 
   return (
-    <div>
-      <swiper-container
-        pagination="true"
-        pagination-clickable="true"
-        space-between="30"
-        slides-per-view="3"
-        className="swiper-container font-inter"
-      >
-        {products.map((product) => (
-          <swiper-slide className="swiper-slide">
-            <div className="mb-5">{product.price}€</div>
-            <div className="mt-2">{product.name}</div>
-            <img
-              src={`${import.meta.env.VITE_BACKEND_URL}/assets/images/${
-                product.src
-              }`}
-              alt={product.alt}
-            />
-          </swiper-slide>
-        ))}
-      </swiper-container>
-    </div>
+    <>
+      <div>random</div>
+      <div>
+        <swiper-container
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          slides-per-view="3"
+          className="swiper-container font-inter"
+        >
+          {products.map((product) => (
+            <swiper-slide className="swiper-slide">
+              <div className="mb-5">{product.price}€</div>
+              <div className="mt-2">{product.name}</div>
+              <img
+                src={`${import.meta.env.VITE_BACKEND_URL}/assets/images/${
+                  product.src
+                }`}
+                alt={product.alt}
+              />
+            </swiper-slide>
+          ))}
+        </swiper-container>
+      </div>
+    </>
   );
 }
 

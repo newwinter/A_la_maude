@@ -1,7 +1,7 @@
 import React from "react";
 import RandomProductAccueil from "../components/RandomProductAccueil";
 import ResumeAccueil from "../components/ResumeAccueil";
-import Categories from "../components/Categories";
+import CategorieCard from "../components/CategorieCard";
 import couturecoupe from "../assets/couturecoupe.jpeg";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
         <img alt="home" src={couturecoupe} />
       </div>
       <ResumeAccueil />
-      <Categories />
+      <CategorieCard />
       <RandomProductAccueil />
     </div>
   );
