@@ -28,7 +28,23 @@ const read = (req, res) => {
     });
 };
 
+const add = async (req, res) => {
+  const categories = req.body;
+  // TODO validations (length, format...)
+
+  models.categories
+    .insert(categories)
+    .then(([result]) => {
+      res.location(`/categories/${result.insertId}`).sendStatus(201);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
 module.exports = {
   browse,
   read,
+  add,
 };
