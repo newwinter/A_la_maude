@@ -12,11 +12,29 @@ function Admin() {
     setCategorie({ ...categorie, [name]: value });
   };
 
+  const postCategorie = (event) => {
+    event.preventDefault();
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/categories`, {
+      method: "POST",
+      body: JSON.stringify(categorie),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((cat) => setCategorie(cat))
+      .catch((err) => console.error(err));
+  };
+
   return (
     <>
       <div>Admin</div>
       <div>
-        <form className="w-full max-w-lg font-inter ">
+        <form
+          className="w-full max-w-lg font-inter"
+          onSubmit={(event) => postCategorie(event)}
+        >
           <div className="flex flex-wrap justify-center">
             <div className="w-full px-3 mb-6">
               <label
