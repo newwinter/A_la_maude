@@ -23,9 +23,9 @@ CREATE TABLE images(
   CONSTRAINT product_id_fk FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO categories(name,src,alt) VALUES ('calot femme','Calot1_F_1.jpeg','lorem ipsum');
-INSERT INTO categories(name,src,alt) VALUES ('calot homme','Calot11_M_1.jpeg','lorem ipsum');
-INSERT INTO categories(name,src,alt) VALUES ('coton','coton1_1.jpeg','lorem ipsum');
+INSERT INTO categories(name,src,alt) VALUES ('Calots femme','Calot1_F_1.jpeg','lorem ipsum');
+INSERT INTO categories(name,src,alt) VALUES ('Calots homme','Calot11_M_1.jpeg','lorem ipsum');
+INSERT INTO categories(name,src,alt) VALUES ('Cotons','coton1_1.jpeg','lorem ipsum');
 
 INSERT INTO products(name,gender,price,status,description,category_id) VALUES ('Calot à fleurs bleues et roses','femme',10,'disponible','Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l''environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l''environnement.',1);
 INSERT INTO products(name,gender,price,status,description,category_id) VALUES ('Calot kaki à fleurs noirs et blanches','femme',10,'disponible','Ce produit une alternative écologique et durable pour maintenir les cheveux. Fabriqué à partir de 100% de coton, il offre un confort optimal grâce à son élastique et ses lanières qui assurent un meilleur maintien. Conçu pour remplacer les produits à usage unique, ce produit est respectueux de l''environnement et réduit les déchets. Il est lavable et réutilisable, ce qui le rend économique et pratique. Adapté à tous les types de cheveux, il est fabriqué à la main en France par mes soins avec des tissus de qualité soigneusement sélectionnés. De plus, chaque pièce a été préalablement lavée au moins une fois pour garantir sa propreté. Grâce à sa durabilité, ce produit offre une solution durable pour prendre soin de vos cheveux tout en étant respectueux de l''environnement.',1);

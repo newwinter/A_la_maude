@@ -39,6 +39,11 @@ const ProductManager = require("./ProductManager");
 models.product = new ProductManager();
 models.product.setDatabase(pool);
 
+const CategoriesManager = require("./CategoriesManager");
+
+models.categories = new CategoriesManager();
+models.categories.setDatabase(pool);
+
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 

@@ -6,7 +6,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Page404 from "./pages/Page404";
 import Panier from "./pages/Panier";
-import Articles from "./pages/Articles";
+import Categorie from "./pages/Categorie";
+import OneProduct from "./pages/OneProduct";
 
 import AdminLayout from "./pages/Layout/AdminLayout";
 import HomeAdmin from "./pages/Admin/HomeAdmin";
@@ -19,9 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<UserLayout />}>
           <Route path="" element={<Home />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/panier" element={<Panier />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="categorie/:name" element={<Categorie />} />
+          <Route path="produits/:name" element={<OneProduct />} />
+          <Route path="panier" element={<Panier />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Page404 />} />
         </Route>
         <Route path="/admin" element={<AdminLayout />}>
