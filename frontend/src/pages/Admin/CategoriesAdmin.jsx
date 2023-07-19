@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Admin() {
+  const [categorie, setCategorie] = useState({
+    name: "",
+    src: "",
+    alt: "",
+  });
+
+  const handleCategorie = (name, value) => {
+    // console.log(name)
+    setCategorie({ ...categorie, [name]: value });
+  };
+
   return (
     <>
       <div>Admin</div>
@@ -22,6 +33,9 @@ function Admin() {
                 required
                 minLength={1}
                 maxLength={255}
+                name="name"
+                onChange={(e) => handleCategorie(e.target.name, e.target.value)}
+                value={categorie.name}
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
@@ -39,6 +53,9 @@ function Admin() {
                 required
                 minLength={1}
                 maxLength={255}
+                name="src"
+                onChange={(e) => handleCategorie(e.target.name, e.target.value)}
+                value={categorie.src}
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
@@ -55,6 +72,9 @@ function Admin() {
                 placeholder="Description photo"
                 required
                 minLength={1}
+                name="alt"
+                onChange={(e) => handleCategorie(e.target.name, e.target.value)}
+                value={categorie.alt}
               />
             </div>
             <button
