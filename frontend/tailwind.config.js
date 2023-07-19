@@ -12,6 +12,13 @@ module.exports = {
       light: "#FFFCF1",
       yellow: "#ffc82c",
       text_color: "#696D7D",
+      gray: {
+        200: "#e5e7eb",
+        300: "#d1d5db",
+        400: "#9ca3af",
+        500: "#6b7280",
+        700: "#374151",
+      },
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],
