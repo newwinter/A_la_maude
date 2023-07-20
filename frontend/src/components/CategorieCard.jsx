@@ -13,7 +13,7 @@ function Categories() {
   return (
     <>
       <div className="text-center text-inter mt-20">
-        Retrouver toute nos catégories de produits
+        Retrouvez toutes nos catégories de produits
       </div>
       <div className="flex flex-row mx-10">
         {categories.map((categorie) => (

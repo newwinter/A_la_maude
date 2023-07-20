@@ -7,7 +7,7 @@ function ResumeAccueil() {
         Créations coutures
       </p>
       <p className="font-lobster italic text-2xl flex justify-center">
-        Réalisation d'articles et accessoires fais main dans l'Hérault
+        Réalisation d'articles et accessoires faits main dans l'Hérault
       </p>
     </div>
   );
