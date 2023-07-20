@@ -22,14 +22,12 @@ class CategoriesManager extends AbstractManager {
     );
   }
 
-  // update(categorie) {
-  //   return this.database.query(`update ${this.table} set = ? where id = ?`, [
-  //     categorie.name,
-  //     categorie.src,
-  //     categorie.alt,
-  //     categorie.id,
-  //   ]);
-  // }
+  update(cat) {
+    return this.database.query(
+      `update ${this.table} set name = ?, src = ?, alt = ? where id = ?`,
+      [cat.name, cat.src, cat.alt, cat.id]
+    );
+  }
 
   delete(id) {
     return this.database.query(`delete from ${this.table} where id = ?`, [id]);
