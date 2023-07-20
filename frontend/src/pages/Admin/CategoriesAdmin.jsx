@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
 function Admin() {
-  const [categorie, setCategorie] = useState({
+  const categorieModel = {
     name: "",
     src: "",
     alt: "",
-  });
+  };
+  const [categorie, setCategorie] = useState(categorieModel);
 
   const handleCategorie = (name, value) => {
     setCategorie({ ...categorie, [name]: value });
@@ -32,7 +33,7 @@ function Admin() {
       method: "DELETE",
     })
       .then((res) => res.json())
-      .then((cat) => setCategorie(cat))
+      .then(() => setCategorie(categorieModel))
       .catch((err) => console.error(err));
   };
 
