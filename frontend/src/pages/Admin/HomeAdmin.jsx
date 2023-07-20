@@ -3,10 +3,9 @@ import CategoriesAdmin from "./CategoriesAdmin";
 
 function HomeAdmin() {
   return (
-    <>
-      <div>HomeAdmin</div>
+    <div>
       <CategoriesAdmin />
-    </>
+    </div>
   );
 }
 
