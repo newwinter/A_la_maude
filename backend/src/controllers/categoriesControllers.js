@@ -28,6 +28,28 @@ const read = (req, res) => {
     });
 };
 
+const edit = (req, res) => {
+  const cat = req.body;
+
+  // TODO validations (length, format...)
+
+  cat.id = parseInt(req.params.id, 10);
+
+  models.categories
+    .update(cat)
+    .then(([result]) => {
+      if (result.affectedRows === 0) {
+        res.sendStatus(404);
+      } else {
+        res.sendStatus(204);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
 const add = async (req, res) => {
   const categories = req.body;
   // TODO validations (length, format...)
@@ -35,7 +57,26 @@ const add = async (req, res) => {
   models.categories
     .insert(categories)
     .then(([result]) => {
-      res.location(`/categories/${result.insertId}`).sendStatus(201);
+      res
+        .location(`/categories/${result.insertId}`)
+        .status(201)
+        .json({ ...req.body, id: result.insertId });
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
+const destroy = (req, res) => {
+  models.categories
+    .delete(req.params.id)
+    .then(([result]) => {
+      if (result.affectedRows === 0) {
+        res.sendStatus(404);
+      } else {
+        res.sendStatus(204);
+      }
     })
     .catch((err) => {
       console.error(err);
@@ -46,5 +87,7 @@ const add = async (req, res) => {
 module.exports = {
   browse,
   read,
+  edit,
   add,
+  destroy,
 };

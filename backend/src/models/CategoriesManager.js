@@ -15,18 +15,23 @@ class CategoriesManager extends AbstractManager {
     ]);
   }
 
-  // insert(item) {
-  //   return this.database.query(`insert into ${this.table} (title) values (?)`, [
-  //     item.title,
-  //   ]);
-  // }
+  insert(categorie) {
+    return this.database.query(
+      `insert into ${this.table} (name, src, alt) values (?, ?, ?)`,
+      [categorie.name, categorie.src, categorie.alt]
+    );
+  }
 
-  // update(item) {
-  //   return this.database.query(
-  //     `update ${this.table} set title = ? where id = ?`,
-  //     [item.title, item.id]
-  //   );
-  // }
+  update(cat) {
+    return this.database.query(
+      `update ${this.table} set name = ?, src = ?, alt = ? where id = ?`,
+      [cat.name, cat.src, cat.alt, cat.id]
+    );
+  }
+
+  delete(id) {
+    return this.database.query(`delete from ${this.table} where id = ?`, [id]);
+  }
 }
 
 module.exports = CategoriesManager;
