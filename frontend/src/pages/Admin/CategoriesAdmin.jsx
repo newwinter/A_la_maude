@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Admin() {
   const categorieModel = {
@@ -7,6 +7,7 @@ function Admin() {
     alt: "",
   };
   const [categorie, setCategorie] = useState(categorieModel);
+  const [allCategories, setAllCategories] = useState([]);
 
   const handleCategorie = (name, value) => {
     setCategorie({ ...categorie, [name]: value });
@@ -37,9 +38,34 @@ function Admin() {
       .catch((err) => console.error(err));
   };
 
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/categories`)
+      .then((res) => res.json())
+      .then((cat) => setAllCategories(cat))
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <>
       <div>Admin</div>
+      <div className="flex flex-col w-80">
+        <label htmlFor="underline_select" className="sr-only">
+          Choisissez une formation
+        </label>
+        <select
+          id="underline_select"
+          className="flex justify-center py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-500 peer"
+          name="id"
+          value=""
+        >
+          <option value="">Choisissez une formation</option>
+          {allCategories.map((cat) => (
+            <option key={cat.id} value={cat.id}>
+              {cat.name}
+            </option>
+          ))}
+        </select>
+      </div>
       <div>
         <form
           className="w-full max-w-lg font-inter"
