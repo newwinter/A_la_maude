@@ -57,7 +57,10 @@ const add = async (req, res) => {
   models.categories
     .insert(categories)
     .then(([result]) => {
-      res.location(`/categories/${result.insertId}`).sendStatus(201);
+      res
+        .location(`/categories/${result.insertId}`)
+        .status(201)
+        .json({ ...req.body, id: result.insertId });
     })
     .catch((err) => {
       console.error(err);

@@ -8,7 +8,6 @@ function Admin() {
   });
 
   const handleCategorie = (name, value) => {
-    // console.log(name)
     setCategorie({ ...categorie, [name]: value });
   };
 
@@ -21,6 +20,16 @@ function Admin() {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
+    })
+      .then((res) => res.json())
+      .then((cat) => setCategorie(cat))
+      .catch((err) => console.error(err));
+  };
+
+  const deletePost = (event) => {
+    event.preventDefault();
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/categories/${categorie.id}`, {
+      method: "DELETE",
     })
       .then((res) => res.json())
       .then((cat) => setCategorie(cat))
@@ -95,16 +104,29 @@ function Admin() {
                 value={categorie.alt}
               />
             </div>
-            <button
-              type="submit"
-              className="max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-gradient-to-br ring-2 ring-terracotta from-terracotta to-lemon focus:ring-4 focus:outline-none focus:ring-terracotta"
-            >
-              <div className="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                <h3 className="text-center">Ajouter</h3>
-              </div>
-            </button>
+            {!categorie.id && (
+              <button
+                type="submit"
+                className="max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-gradient-to-br ring-2 ring-terracotta from-terracotta to-lemon focus:ring-4 focus:outline-none focus:ring-terracotta"
+              >
+                <div className="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+                  <h3 className="text-center">Ajouter</h3>
+                </div>
+              </button>
+            )}
           </div>
         </form>
+        {categorie.id && (
+          <button
+            type="button"
+            onClick={(event) => deletePost(event)}
+            className="max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-gradient-to-br ring-2 ring-terracotta from-terracotta to-lemon focus:ring-4 focus:outline-none focus:ring-terracotta"
+          >
+            <div className="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+              <h3 className="text-center">Supprimer</h3>
+            </div>
+          </button>
+        )}
       </div>
     </>
   );
