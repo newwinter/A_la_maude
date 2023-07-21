@@ -122,7 +122,8 @@ function Contact() {
                 Envoyer
               </button>
               <ToastContainer
-                position="top-center"
+                className="mt-8"
+                position="top-right"
                 autoClose={6000}
                 hideProgressBar={false}
                 newestOnTop={false}
