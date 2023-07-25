@@ -12,7 +12,7 @@ function Categories() {
 
   return (
     <>
-      <div className="text-center text-inter mt-20">
+      <div className="text-center text-inter mt-20 text-2xl font-inter mb-8">
         Retrouvez toutes nos catégories de produits
       </div>
       <div className="flex flex-row mx-10">
