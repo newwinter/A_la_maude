@@ -17,6 +17,9 @@ function RandomProductAccueil() {
 
   return (
     <div>
+      <h2 className="text-2xl font-inter text-center my-8">
+        Retrouvez une sélection de produits
+      </h2>
       <swiper-container
         pagination="true"
         pagination-clickable="true"

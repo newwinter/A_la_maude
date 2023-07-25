@@ -105,7 +105,7 @@ function CategoriesAdmin() {
       </div>
       <div>
         <form
-          className="w-full max-w-lg font-inter"
+          className="flex justify-center max-w-lg font-inter"
           onSubmit={(event) => postCategorie(event)}
         >
           <div className="flex flex-wrap justify-center">
@@ -181,11 +181,11 @@ function CategoriesAdmin() {
           </div>
         </form>
         {categorie.id && (
-          <div>
+          <div className="flex justify-center">
             <button
               type="button"
               onClick={(event) => deleteCategorie(event)}
-              className="my-8 max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-terracotta ring-2 ring-terracotta focus:ring-4 focus:outline-none focus:ring-terracotta"
+              className="mx-3 my-8 max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-terracotta ring-2 ring-terracotta focus:ring-4 focus:outline-none focus:ring-terracotta"
             >
               <div className="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
                 <h3 className="text-center">Supprimer</h3>
@@ -194,7 +194,7 @@ function CategoriesAdmin() {
             <button
               type="button"
               onClick={(event) => updateCategorie(event)}
-              className="my-8 max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-terracotta ring-2 focus:ring-4 ring-terracotta focus:outline-none focus:ring-terracotta"
+              className="mx-3 my-8 max-sm:order max-sm:m-2 w-56 flex items-center justify-center overflow-hidden rounded-lg group bg-terracotta ring-2 focus:ring-4 ring-terracotta focus:outline-none focus:ring-terracotta"
             >
               <div className="w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
                 <h3 className="text-center">Modifier</h3>
