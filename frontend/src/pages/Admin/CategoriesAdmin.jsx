@@ -83,7 +83,7 @@ function CategoriesAdmin() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col items-center">
       <div className="w-80">
         <label htmlFor="underline_select pl-4" className="sr-only">
           Choisissez une catégorie de produit
