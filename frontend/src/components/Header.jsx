@@ -46,7 +46,7 @@ function Header() {
                     : ""
                 }
               >
-                À propos
+                Accueil
               </NavLink>
             </li>
             <li className="block py-2 pl-3 pr-2 mx-4 max-[450px]:mx-1 max-[450px]:text-sm rounded hover:text-rose">
