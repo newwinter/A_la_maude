@@ -40,6 +40,22 @@ const read = (req, res) => {
     });
 };
 
+const readbycategory = (req, res) => {
+  models.product
+    .findbycategory(req.params.id)
+    .then(([product]) => {
+      if (product[0] == null) {
+        res.sendStatus(404);
+      } else {
+        res.send(product[0]);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
 // const edit = (req, res) => {
 //   const item = req.body;
 
@@ -97,6 +113,7 @@ const read = (req, res) => {
 module.exports = {
   browse,
   read,
+  readbycategory,
   // edit,
   // add,
   // destroy,

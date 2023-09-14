@@ -20,6 +20,13 @@ class ProductManager extends AbstractManager {
     );
   }
 
+  findAllByCategorie(id) {
+    return this.database.query(
+      `select * from ${this.table} where category_id = ? `,
+      [id]
+    );
+  }
+
   // insert(item) {
   //   return this.database.query(`insert into ${this.table} (title) values (?)`, [
   //     item.title,
